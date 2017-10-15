@@ -1,5 +1,7 @@
 import { Connection, createConnection } from 'typeorm';
 import { MysqlConnectionOptions } from 'typeorm/driver/mysql/mysqlconnectionoptions';
+import { Bill } from '../models/bill';
+import { Customer } from '../models/customer';
 
 export interface DatabaseConfiguration {
 	type: 'mysql' | 'mariadb' ;
@@ -39,6 +41,8 @@ export class DatabaseProvider {
 			},
 			entities: [
 				// TODO: Add entities
+				Bill,
+				Customer,
 			],
 			synchronize: true,
 		} as MysqlConnectionOptions);
