@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { DatabaseProvider } from './database/index';
+import { ApiServer } from './server/index';
 
 DatabaseProvider.configure({
 	type: process.env.DATABASE_TYPE as any || 'mariadb',
@@ -11,4 +12,5 @@ DatabaseProvider.configure({
 	ssl: !!process.env.USE_SSL
 });
 
-console.log('Hallo EKON from Typescript!');
+const server = new ApiServer();
+server.start(+process.env.PORT || 8080);
