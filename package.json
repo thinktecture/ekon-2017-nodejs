@@ -25,9 +25,14 @@
   "homepage": "https://github.com/thinktecture/ekon-2017-nodejs#readme",
   "dependencies": {
     "@types/node": "^8.0.34",
+    "@types/restify": "^5.0.5",
+    "mysql": "^2.15.0",
     "nodemon": "^1.12.1",
+    "reflect-metadata": "^0.1.10",
+    "restify": "^6.0.1",
     "rimraf": "^2.6.2",
     "ts-node": "^3.3.0",
+    "typeorm": "^0.1.0",
     "typescript": "^2.5.3"
   }
 }
