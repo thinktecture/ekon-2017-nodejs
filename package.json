@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/thinktecture/ekon-2017-nodejs/issues"
   },
-  "homepage": "https://github.com/thinktecture/ekon-2017-nodejs#readme"
+  "homepage": "https://github.com/thinktecture/ekon-2017-nodejs#readme",
+  "dependencies": {
+    "nodemon": "^1.12.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  }
 }
